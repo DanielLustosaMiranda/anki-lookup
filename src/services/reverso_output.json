@@ -1,0 +1,118 @@
+{
+  "ok": true,
+  "text": "a piece of cake",
+  "source": "english",
+  "target": "portuguese",
+  "translations": [
+    "canja f",
+    "",
+    "fichinha",
+    "a piece of cake",
+    "facinho",
+    "um pedaço do bolo",
+    "um pedaço de torta",
+    "mamão com açúcar"
+  ],
+  "examples": [
+    {
+      "id": 0,
+      "source": "With the new software, creating reports has become a piece of cake for us.",
+      "target": "Com o novo software, criar relatórios se tornou moleza para nós."
+    },
+    {
+      "id": 1,
+      "source": "After the first dive, snorkeling felt like a piece of cake for me.",
+      "target": "Após o primeiro mergulho, fazer snorkeling foi moleza para mim."
+    },
+    {
+      "id": 2,
+      "source": "He held out a piece of cake to celebrate her birthday.",
+      "target": "Ele ofereceu um pedaço de bolo para comemorar o aniversário dela."
+    },
+    {
+      "id": 3,
+      "source": "I saved a piece of cake for him after the party.",
+      "target": "Guardei um pedaço de bolo para ele depois da festa."
+    },
+    {
+      "id": 4,
+      "source": "His presentation was a piece of cake, and everyone loved his ideas.",
+      "target": "A apresentação dele foi moleza, e todos amaram suas ideias."
+    },
+    {
+      "id": 5,
+      "source": "Helping my little brother with his homework was a piece of cake today.",
+      "target": "Ajudar meu irmãozinho com a lição de casa foi moleza hoje."
+    },
+    {
+      "id": 6,
+      "source": "The recipe was so simple; making cookies was a piece of cake.",
+      "target": "A receita era tão simples; fazer os biscoitos foi moleza."
+    },
+    {
+      "id": 7,
+      "source": "She sneaked a piece of cake when no one was looking.",
+      "target": "Ela surrupiou um pedaço de bolo quando ninguém estava olhando."
+    },
+    {
+      "id": 8,
+      "source": "In the chaos of the event, he bolted a piece of cake mindlessly.",
+      "target": "No caos do evento, ele devorou um pedaço de bolo sem pensar."
+    },
+    {
+      "id": 9,
+      "source": "He gave me an orange in exchange for a piece of cake.",
+      "target": "Ele me deu uma laranja em troca de um pedaço de bolo."
+    },
+    {
+      "id": 10,
+      "source": "She wanted a piece of cake, but there was none left.",
+      "target": "Ela queria um pedaço de bolo, mas não tinha mais."
+    },
+    {
+      "id": 11,
+      "source": "You're a piece of cake, compared to the other one...",
+      "target": "Você é um pedaço de bolo, comparado a outra..."
+    },
+    {
+      "id": 12,
+      "source": "I'll cut you a piece of cake, baby.",
+      "target": "Eu vou lhe dar um pedaço de bolo, querida."
+    },
+    {
+      "id": 13,
+      "source": "So deciding what to wear is a piece of cake for her.",
+      "target": "Então decidir o que vestir é um pedaço de bolo para ela."
+    },
+    {
+      "id": 14,
+      "source": "Dekorin proposes to make a piece of cake with a wish.",
+      "target": "Dekorin propõe fazer um pedaço de bolo com um desejo."
+    },
+    {
+      "id": 15,
+      "source": "Getting to the station on time was a piece of cake with the new shortcuts.",
+      "target": "Chegar à estação a tempo foi moleza com os novos atalhos."
+    },
+    {
+      "id": 16,
+      "source": "Furtively, she stole a piece of cake from the table during the party.",
+      "target": "Discretamente, ela pegou um pedaço de bolo da mesa durante a festa."
+    },
+    {
+      "id": 17,
+      "source": "She reached out to glom a piece of cake from the table.",
+      "target": "Ela esticou o braço para afanar um pedaço de bolo da mesa."
+    },
+    {
+      "id": 18,
+      "source": "By comparison, designing a brassiere is a piece of cake.",
+      "target": "Em comparação, desenhar um sutiã é fácil como um pedaço de bolo."
+    },
+    {
+      "id": 19,
+      "source": "No, but I wouldn't mind a piece of cake.",
+      "target": "Não, mas não me importaria com um pedaço de bolo."
+    }
+  ]
+}
