@@ -110,7 +110,7 @@ if __name__ == "__main__":
     # This block runs when the script is executed directly.
     
     # 1. Define the deck and the card data.
-    deck = "Thermodynamics"
+    deck = "test"
     cards = [
         {"Front": "State the First Law of Thermodynamics.", "Back": "Energy cannot be created or destroyed, only transferred or changed from one form to another. ΔU = Q - W"},
         {"Front": "What is an adiabatic process?", "Back": "A process that occurs without transferring heat or mass between a thermodynamic system and its surroundings."},

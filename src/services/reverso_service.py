@@ -2,21 +2,20 @@ import json
 import subprocess
 import os
 from typing import Dict, Optional
+from utils.run_api import run_api
 
 class ReversoScraperService:
     
     def __init__(self):
         current_dir = os.path.dirname(__file__)
         project_root = os.path.abspath(os.path.join(current_dir, '..', '..'))
-
         self.scraper_script_path = os.path.join(project_root, 'reverso_scraper', 'get_data.js')
 
         if not os.path.isfile(self.scraper_script_path):
             raise FileNotFoundError(f"Script do scraper não encontrado em: {self.scraper_script_path}")
         
     def get_context(self, text: str, source_lang: str, target_lang: str) -> Optional[Dict]:
-        
-        funcao ='context'
+        funcao = 'context'
         command = [
             'node',
             self.scraper_script_path,
@@ -27,78 +26,30 @@ class ReversoScraperService:
         ]
 
         print(f"🐍 Python: Executando comando -> {' '.join(command)}")
-
-        try:
-            
-            result = subprocess.run(command, capture_output=True, text=True, check=True)
-
-            stdout = result.stdout
-            
-            data = json.loads(stdout)
-
-            return data
-
-        except FileNotFoundError:
-            print("❌ ERRO: O comando 'node' não foi encontrado. O Node.js está instalado e no PATH do sistema?")
-            return None
-        except subprocess.CalledProcessError as e:
-            print(f"❌ ERRO: O script do scraper falhou com o código de saída {e.returncode}.")
-            print(f"   Mensagem de erro do scraper: {e.stderr}")
-            return None
-        except json.JSONDecodeError:
-            print("❌ ERRO: Falha ao decodificar a resposta JSON do scraper. A saída não foi um JSON válido.")
-            print(f"   Saída recebida: {result.stdout}")
-            return None
+        return run_api(command)
         
-    def get_translation(self, text: str, transSource: str, trasTarget):
-        funcao = 'trasnlation'
+    def get_translation(self, text: str, transSource: str, transTarget: str) -> Optional[Dict]:
+        funcao = 'translation'
         command = [
             'node',
             self.scraper_script_path,
             funcao,
             text,
             transSource,
-            trasTarget
+            transTarget
         ]
 
         print(f"🐍 Python: Executando comando -> {' '.join(command)}")
-
-        try:
-            
-            result = subprocess.run(command, capture_output=True, text=True, check=True)
-
-            stdout = result.stdout
-            
-            data = json.loads(stdout)
-
-            return data
-
-        except FileNotFoundError:
-            print("ERRO: O comando 'node' não foi encontrado. O Node.js está instalado e no PATH do sistema?")
-            return None
-        except subprocess.CalledProcessError as e:
-            print(f"ERRO: O script do scraper falhou com o código de saída {e.returncode}.")
-            print(f"   Mensagem de erro do scraper: {e.stderr}")
-            return None
-        except json.JSONDecodeError:
-            print("RRO: Falha ao decodificar a resposta JSON do scraper. A saída não foi um JSON válido.")
-            print(f"   Saída recebida: {result.stdout}")
-            return None
+        return run_api(command)
 
 
-
-
-
-
-
-
-        
 if __name__ == "__main__":
     scprap = ReversoScraperService()
     print("--- Início do teste ---")
 
     # Vamos usar uma palavra diferente para garantir que não estamos vendo um resultado em cache
-    data = scprap.get_context("nice", "english", "portuguese")
+    data = scprap.get_context("blue", "english", "portuguese")
+    print(data)
     
     # Imprime o início do resultado para confirmar que temos dados
     if data and 'examples' in data:

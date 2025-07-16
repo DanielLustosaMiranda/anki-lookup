@@ -1,25 +1,46 @@
 import json
 import subprocess
+import os
 
-def run_api(self, command):
+def run_api(command):
     try:
-            
-            result = subprocess.run(command, capture_output=True, text=True, check=True)
+        result = subprocess.run(command, capture_output=True, text=True, check=True)
 
-            stdout = result.stdout
-            
-            data = json.loads(stdout)
+        stdout = result.stdout
+        
+        data = json.loads(stdout)
 
-            return data
+        return data
 
-        except FileNotFoundError:
-            print("❌ ERRO: O comando 'node' não foi encontrado. O Node.js está instalado e no PATH do sistema?")
-            return None
-        except subprocess.CalledProcessError as e:
-            print(f"❌ ERRO: O script do scraper falhou com o código de saída {e.returncode}.")
-            print(f"   Mensagem de erro do scraper: {e.stderr}")
-            return None
-        except json.JSONDecodeError:
-            print("❌ ERRO: Falha ao decodificar a resposta JSON do scraper. A saída não foi um JSON válido.")
-            print(f"   Saída recebida: {result.stdout}")
-            return None
+    except FileNotFoundError:
+        print("❌ ERRO: O comando 'node' não foi encontrado. O Node.js está instalado e no PATH do sistema?")
+        return None
+    except subprocess.CalledProcessError as e:
+        print(f"❌ ERRO: O script do scraper falhou com o código de saída {e.returncode}.")
+        print(f"   Mensagem de erro do scraper: {e.stderr}")
+        return None
+    except json.JSONDecodeError:
+        print("❌ ERRO: Falha ao decodificar a resposta JSON do scraper. A saída não foi um JSON válido.")
+        print(f"   Saída recebida: {result.stdout}")
+        return None
+    except Exception as e:
+        print(f"❌ ERRO: Ocorreu um erro inesperado: {e}")
+        return None
+
+
+if __name__ == "__main__":
+    command = [
+        "node",
+        os.path.expanduser("~/anki/reverso_scraper/run_lookup.js"),
+        "context",
+        "hello",
+        "english",
+        "portuguese"
+    ]
+    
+    data = run_api(command)
+    
+    if data:
+        print("✅ Resultado:", data)
+    else:
+        print("❌ Falha na execução.")
