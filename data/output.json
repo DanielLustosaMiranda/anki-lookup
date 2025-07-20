@@ -1,135 +1,157 @@
 {
   "ok": true,
-  "text": "nice",
+  "text": "neat",
   "source": "english",
   "target": "portuguese",
   "translations": [
-    "lindo",
+    "bonito",
     "",
     "",
     "",
     "",
-    "",
-    "camarada mf",
-    "",
+    "boi m",
     "",
     "",
     "",
-    "preciso",
+    "caubói m",
     "",
     "",
     "",
-    "sutil",
-    "boa-praça",
+    "cowboy m",
     "",
     "",
     "",
-    "exato",
+    "",
+    "caprichado",
     "",
     "",
     "",
-    "Nice f"
+    "asseado",
+    "",
+    "",
+    "",
+    "esmerado",
+    "",
+    "",
+    "",
+    "eficiente",
+    "",
+    "",
+    "",
+    "engenhoso",
+    "",
+    "",
+    "",
+    "pulcro",
+    "",
+    "",
+    "",
+    "hábil",
+    "",
+    "",
+    "",
+    "irado"
   ],
   "examples": [
     {
       "id": 0,
-      "source": "They suppose the weather will be nice for the picnic tomorrow.",
-      "target": "Eles esperam que o tempo esteja bom para o piquenique amanhã."
+      "source": "The tote organizer keeps everything neat and organized in the car.",
+      "target": "O organizador da bolsa mantém tudo limpo e organizado no carro."
     },
     {
       "id": 1,
-      "source": "I hope you have a nice day at work tomorrow.",
-      "target": "Espero que você tenha um bom dia no trabalho amanhã."
+      "source": "A neat and clean bathroom is essential for good hygiene.",
+      "target": "Um banheiro limpo e organizado é essencial para uma boa higiene."
     },
     {
       "id": 2,
-      "source": "They chose to start off their evening with a nice dinner.",
-      "target": "Eles optaram por começar a noite com um jantar agradável."
+      "source": "My neighbor gives a tinker's cuss about maintaining his yard neat.",
+      "target": "Meu vizinho está se lixando para manter seu jardim arrumado."
     },
     {
       "id": 3,
-      "source": "Her cleanup efforts in the cluttered garage made it look spacious and nice.",
-      "target": "Seus esforços de arrumação na garagem bagunçada a deixaram espaçosa e agradável."
+      "source": "After the storm, the scrambled debris littered the once neat garden.",
+      "target": "Após a tempestade, os destroços espalhados sujavam o jardim antes arrumado."
     },
     {
       "id": 4,
-      "source": "She always returns the favor when someone does something nice for her.",
-      "target": "Ela sempre retribui o favor quando alguém faz algo legal por ela."
+      "source": "She served the whiskey neat in an elegant shot glass.",
+      "target": "Ela serviu o uísque puro em um elegante copo de dose."
     },
     {
       "id": 5,
-      "source": "Everyone in the office agrees that the new manager is a nice guy.",
-      "target": "Todos no escritório concordam que o novo gerente é um cara legal."
+      "source": "Scoring the paper makes it simpler to create neat and even folds.",
+      "target": "Vincar o papel torna mais simples criar dobras limpas e uniformes."
     },
     {
       "id": 6,
-      "source": "She always tells her customers to have a nice day after serving them.",
-      "target": "Ela sempre diz aos seus clientes para terem um bom dia depois de atendê-los."
+      "source": "He tucked in the sheets tightly to create a neat bed.",
+      "target": "Ele esticou bem os lençóis para deixar a cama arrumada."
     },
     {
       "id": 7,
-      "source": "Remember to smile and have a nice day, no matter what happens.",
-      "target": "Lembre-se de sorrir e ter um bom dia, não importa o que aconteça."
+      "source": "She kept her mourning outfit neat and respectful for the occasion.",
+      "target": "Ela manteve sua roupa de luto arrumada e respeitosa para a ocasião."
     },
     {
       "id": 8,
-      "source": "The receptionist always wishes everyone to have a nice day as they leave.",
-      "target": "A recepcionista sempre deseja a todos que tenham um bom dia ao sair."
+      "source": "The children learned the importance of keeping their play area neat.",
+      "target": "As crianças aprenderam a importância de manter a área de brincar arrumada."
     },
     {
       "id": 9,
-      "source": "We found a nice apartment a stone's throw from the university campus.",
-      "target": "Encontramos um bom apartamento a dois passos do campus universitário."
+      "source": "You should rubber any mistakes to maintain a neat presentation.",
+      "target": "Você deve apagar quaisquer erros para manter uma apresentação limpa."
     },
     {
       "id": 10,
-      "source": "The letting agent showed us several nice apartments in the area.",
-      "target": "O corretor de imóveis nos mostrou vários apartamentos agradáveis na área."
+      "source": "After cleaning, the room looked neat and welcoming for guests.",
+      "target": "Depois da limpeza, o quarto ficou arrumado e acolhedor para os hóspedes."
     },
     {
       "id": 11,
-      "source": "It's fun to barbecue outside when the weather is nice.",
-      "target": "É divertido fazer churrasco ao ar livre quando o tempo está bom."
+      "source": "The yard was cleared of debris, making it look neat and tidy.",
+      "target": "O quintal foi limpo de detritos, ficando arrumado e organizado."
     },
     {
       "id": 12,
-      "source": "After dinner, he sipped on a bitter for a nice contrast.",
-      "target": "Após o jantar, ele saboreou um amargo para um bom contraste."
+      "source": "A neat and clean house is important for hosting family gatherings.",
+      "target": "Uma casa arrumada e limpa é importante para receber reuniões familiares."
     },
     {
       "id": 13,
-      "source": "The event will happen, provided that the weather is nice.",
-      "target": "O evento acontecerá, desde que o tempo esteja bom."
+      "source": "The notes were organized in a tied bundle to stay neat.",
+      "target": "As anotações foram organizadas em um maço amarrado para ficarem arrumadas."
     },
     {
       "id": 14,
-      "source": "She applied cream to give her shoes a nice polish.",
-      "target": "Ela aplicou creme para dar um bom lustro aos seus sapatos."
+      "source": "We must keep our uniforms neat and presentable at all times.",
+      "target": "Devemos manter nossos uniformes limpos e apresentáveis o tempo todo."
     },
     {
       "id": 15,
-      "source": "We found a nice spot for a drinking fountain near the playground.",
-      "target": "Encontramos um bom lugar para instalar um bebedouro perto do playground."
+      "source": "The dapper barista wore a stylish apron that enhanced his neat appearance.",
+      "target": "O barista elegante usava um avental estiloso que realçava sua aparência limpa."
     },
     {
       "id": 16,
-      "source": "Treat yourself with a nice cup of coffee every morning.",
-      "target": "Mime-se com uma boa xícara de café todas as manhãs."
+      "source": "The children's ironed uniforms made them look so neat for school.",
+      "target": "Os uniformes passados das crianças os deixavam bem arrumados para a escola."
     },
     {
       "id": 17,
-      "source": "Instead of staying home, let's hit the pavement and enjoy the nice weather.",
-      "target": "Em vez de ficar em casa, vamos bater perna e aproveitar o bom tempo."
+      "source": "The children learned to tidy up their toys after playing to keep things neat.",
+      "target": "As crianças aprenderam a organizar os brinquedos após brincar para manter tudo arrumado."
     },
     {
       "id": 18,
-      "source": "He's such a nice guy that he volunteered to help clean up the park.",
-      "target": "Ele é tão cara legal que se ofereceu para ajudar a limpar o parque."
+      "source": "Opt for cleanable curtains to easily keep your home looking neat.",
+      "target": "Opte por cortinas fáceis de limpar para manter sua casa sempre arrumada."
     },
     {
       "id": 19,
-      "source": "So far as the weather goes, it should be nice tomorrow.",
-      "target": "Em relação ao tempo, deve fazer um bom dia amanhã."
+      "source": "To keep the bushes neat, snip away any overgrown branches.",
+      "target": "Para manter os arbustos arrumados, corte os galhos crescidos."
     }
   ]
 }

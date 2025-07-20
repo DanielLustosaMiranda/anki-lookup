@@ -52,5 +52,5 @@ if __name__ == "__main__":
         except IOError as e:
             print(f"❌ ERRO CRÍTICO: Falha ao salvar arquivo.")
             print(f"   Detalhes: {e}")
-            
+
     print('\n--- Fim do teste ---')
