@@ -1,157 +1,129 @@
 {
   "ok": true,
-  "text": "neat",
+  "text": "sick",
   "source": "english",
   "target": "portuguese",
   "translations": [
-    "bonito",
+    "irado",
     "",
     "",
     "",
     "",
-    "boi m",
-    "",
-    "",
-    "",
-    "caubói m",
-    "",
-    "",
-    "",
-    "cowboy m",
+    "vômito m",
     "",
     "",
     "",
     "",
-    "caprichado",
+    "indisposta",
     "",
     "",
     "",
-    "asseado",
+    "nauseado",
     "",
     "",
     "",
-    "esmerado",
-    "",
-    "",
-    "",
-    "eficiente",
-    "",
-    "",
-    "",
-    "engenhoso",
-    "",
-    "",
-    "",
-    "pulcro",
-    "",
-    "",
-    "",
-    "hábil",
-    "",
-    "",
-    "",
-    "irado"
+    "negro"
   ],
   "examples": [
     {
       "id": 0,
-      "source": "The tote organizer keeps everything neat and organized in the car.",
-      "target": "O organizador da bolsa mantém tudo limpo e organizado no carro."
+      "source": "The children kept company with their sick friend by reading stories together.",
+      "target": "As crianças fizeram companhia ao amigo doente lendo histórias juntos."
     },
     {
       "id": 1,
-      "source": "A neat and clean bathroom is essential for good hygiene.",
-      "target": "Um banheiro limpo e organizado é essencial para uma boa higiene."
+      "source": "The doctor visited the sick man at home to check on his condition.",
+      "target": "O médico visitou o homem doente em casa para verificar sua condição."
     },
     {
       "id": 2,
-      "source": "My neighbor gives a tinker's cuss about maintaining his yard neat.",
-      "target": "Meu vizinho está se lixando para manter seu jardim arrumado."
+      "source": "Despite being a sick man, he tried to maintain a positive attitude.",
+      "target": "Apesar de ser um homem doente, ele tentou manter uma atitude positiva."
     },
     {
       "id": 3,
-      "source": "After the storm, the scrambled debris littered the once neat garden.",
-      "target": "Após a tempestade, os destroços espalhados sujavam o jardim antes arrumado."
+      "source": "It's just tough luck that you got sick before the big game.",
+      "target": "É apenas má sorte que você ficou doente antes do grande jogo."
     },
     {
       "id": 4,
-      "source": "She served the whiskey neat in an elegant shot glass.",
-      "target": "Ela serviu o uísque puro em um elegante copo de dose."
+      "source": "The sick man's wife took care of him throughout his long recovery.",
+      "target": "A esposa do homem doente cuidou dele durante toda sua longa recuperação."
     },
     {
       "id": 5,
-      "source": "Scoring the paper makes it simpler to create neat and even folds.",
-      "target": "Vincar o papel torna mais simples criar dobras limpas e uniformes."
+      "source": "Sarah dodged a bullet by not attending the party where everyone got sick.",
+      "target": "Sarah escapou por um triz ao não comparecer à festa onde todos ficaram doentes."
     },
     {
       "id": 6,
-      "source": "He tucked in the sheets tightly to create a neat bed.",
-      "target": "Ele esticou bem os lençóis para deixar a cama arrumada."
+      "source": "The sick man couldn't leave his bed for weeks due to the flu.",
+      "target": "O homem doente não pôde sair da cama por semanas devido à gripe."
     },
     {
       "id": 7,
-      "source": "She kept her mourning outfit neat and respectful for the occasion.",
-      "target": "Ela manteve sua roupa de luto arrumada e respeitosa para a ocasião."
+      "source": "As a sick man, he appreciated the support of his family and friends.",
+      "target": "Como um homem doente, ele apreciou o apoio de sua família e amigos."
     },
     {
       "id": 8,
-      "source": "The children learned the importance of keeping their play area neat.",
-      "target": "As crianças aprenderam a importância de manter a área de brincar arrumada."
+      "source": "The salesman's sob story about his sick child didn't convince the customer.",
+      "target": "A história comovente do vendedor sobre seu filho doente não convenceu o cliente."
     },
     {
       "id": 9,
-      "source": "You should rubber any mistakes to maintain a neat presentation.",
-      "target": "Você deve apagar quaisquer erros para manter uma apresentação limpa."
+      "source": "He accepted the acting role to fill in for his sick colleague.",
+      "target": "Ele aceitou o cargo temporário para substituir seu colega doente."
     },
     {
       "id": 10,
-      "source": "After cleaning, the room looked neat and welcoming for guests.",
-      "target": "Depois da limpeza, o quarto ficou arrumado e acolhedor para os hóspedes."
+      "source": "She pretended to be sick to avoid going to school yesterday.",
+      "target": "Ela fingiu estar doente para evitar ir à escola ontem."
     },
     {
       "id": 11,
-      "source": "The yard was cleared of debris, making it look neat and tidy.",
-      "target": "O quintal foi limpo de detritos, ficando arrumado e organizado."
+      "source": "He believes in the 'an apple a day' philosophy and rarely gets sick.",
+      "target": "Ele acredita na filosofia 'uma maçã por dia' e raramente fica doente."
     },
     {
       "id": 12,
-      "source": "A neat and clean house is important for hosting family gatherings.",
-      "target": "Uma casa arrumada e limpa é importante para receber reuniões familiares."
+      "source": "The community rallied around the sick man to offer their support and help.",
+      "target": "A comunidade se uniu em torno do homem doente para oferecer seu apoio e ajuda."
     },
     {
       "id": 13,
-      "source": "The notes were organized in a tied bundle to stay neat.",
-      "target": "As anotações foram organizadas em um maço amarrado para ficarem arrumadas."
+      "source": "The child looked wasted after being sick for weeks with the flu.",
+      "target": "A criança parecia definhada depois de ficar doente por semanas com gripe."
     },
     {
       "id": 14,
-      "source": "We must keep our uniforms neat and presentable at all times.",
-      "target": "Devemos manter nossos uniformes limpos e apresentáveis o tempo todo."
+      "source": "The farmer decided to put away the sick sheep to prevent further suffering.",
+      "target": "O fazendeiro decidiu sacrificar a ovelha doente para evitar mais sofrimento."
     },
     {
       "id": 15,
-      "source": "The dapper barista wore a stylish apron that enhanced his neat appearance.",
-      "target": "O barista elegante usava um avental estiloso que realçava sua aparência limpa."
+      "source": "She knows how to care for sick animals at the veterinarian clinic.",
+      "target": "Ela sabe como tratar de animais doentes na clínica veterinária."
     },
     {
       "id": 16,
-      "source": "The children's ironed uniforms made them look so neat for school.",
-      "target": "Os uniformes passados das crianças os deixavam bem arrumados para a escola."
+      "source": "She signed the document on behalf of her colleague who was out sick.",
+      "target": "Ela assinou o documento no lugar de sua colega que estava doente."
     },
     {
       "id": 17,
-      "source": "The children learned to tidy up their toys after playing to keep things neat.",
-      "target": "As crianças aprenderam a organizar os brinquedos após brincar para manter tudo arrumado."
+      "source": "He tried to avoid the germs, but he still came down sick.",
+      "target": "Ele tentou evitar os germes, mas ainda assim ficou doente."
     },
     {
       "id": 18,
-      "source": "Opt for cleanable curtains to easily keep your home looking neat.",
-      "target": "Opte por cortinas fáceis de limpar para manter sua casa sempre arrumada."
+      "source": "You shouldn't push it when you're sick; take some time to rest instead.",
+      "target": "Você não deve forçar quando está doente; tire um tempo para descansar."
     },
     {
       "id": 19,
-      "source": "To keep the bushes neat, snip away any overgrown branches.",
-      "target": "Para manter os arbustos arrumados, corte os galhos crescidos."
+      "source": "The gardener weeded out sick plants to maintain a healthy garden.",
+      "target": "O jardineiro removeu as plantas doentes para manter um jardim saudável."
     }
   ]
 }
