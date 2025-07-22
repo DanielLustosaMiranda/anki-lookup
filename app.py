@@ -1,8 +1,10 @@
-from src.services.reversoApp import ReversoApp
+# app.py
 import tkinter as tk
+from src.controller.reverso_controller import ReversoController
+from src.gui.reverso_app import ReversoApp
 
-# Execução
 if __name__ == "__main__":
     root = tk.Tk()
-    app = ReversoApp(root)
+    controller = ReversoController()
+    app = ReversoApp(root, controller)
     root.mainloop()
