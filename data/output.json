@@ -1,129 +1,116 @@
 {
   "ok": true,
-  "text": "sick",
+  "text": "death",
   "source": "english",
   "target": "portuguese",
   "translations": [
-    "irado",
+    "decadência f",
     "",
     "",
     "",
     "",
-    "vômito m",
-    "",
-    "",
-    "",
-    "",
-    "indisposta",
-    "",
-    "",
-    "",
-    "nauseado",
-    "",
-    "",
-    "",
-    "negro"
+    "Ceifador"
   ],
   "examples": [
     {
       "id": 0,
-      "source": "The children kept company with their sick friend by reading stories together.",
-      "target": "As crianças fizeram companhia ao amigo doente lendo histórias juntos."
+      "source": "Getting to the hospital on time was a matter of life and death.",
+      "target": "Chegar ao hospital a tempo era uma questão de vida ou morte."
     },
     {
       "id": 1,
-      "source": "The doctor visited the sick man at home to check on his condition.",
-      "target": "O médico visitou o homem doente em casa para verificar sua condição."
+      "source": "Being caught in that scandal was social death for the rising politician.",
+      "target": "Ser apanhado naquele escândalo foi uma morte social para o político em ascensão."
     },
     {
       "id": 2,
-      "source": "Despite being a sick man, he tried to maintain a positive attitude.",
-      "target": "Apesar de ser um homem doente, ele tentou manter uma atitude positiva."
+      "source": "They needed the death certificate to settle the deceased's estate.",
+      "target": "Eles precisaram do atestado de óbito para resolver o espólio do falecido."
     },
     {
       "id": 3,
-      "source": "It's just tough luck that you got sick before the big game.",
-      "target": "É apenas má sorte que você ficou doente antes do grande jogo."
+      "source": "The death certificate helped in resolving the deceased's outstanding affairs.",
+      "target": "O atestado de óbito ajudou na resolução dos assuntos pendentes do falecido."
     },
     {
       "id": 4,
-      "source": "The sick man's wife took care of him throughout his long recovery.",
-      "target": "A esposa do homem doente cuidou dele durante toda sua longa recuperação."
+      "source": "The organization aims to reduce the death toll associated with preventable diseases.",
+      "target": "A organização visa reduzir o número de mortos associados a doenças evitáveis."
     },
     {
       "id": 5,
-      "source": "Sarah dodged a bullet by not attending the party where everyone got sick.",
-      "target": "Sarah escapou por um triz ao não comparecer à festa onde todos ficaram doentes."
+      "source": "Every rescue mission was affected by the high death toll from the avalanche.",
+      "target": "Cada missão de resgate foi afetada pelo alto número de mortos na avalanche."
     },
     {
       "id": 6,
-      "source": "The sick man couldn't leave his bed for weeks due to the flu.",
-      "target": "O homem doente não pôde sair da cama por semanas devido à gripe."
+      "source": "The young princess suddenly had greatness thrust upon her after the king's death.",
+      "target": "A jovem princesa subitamente teve grandeza imposta após a morte do rei."
     },
     {
       "id": 7,
-      "source": "As a sick man, he appreciated the support of his family and friends.",
-      "target": "Como um homem doente, ele apreciou o apoio de sua família e amigos."
+      "source": "The doctor emphasized that taking the medication was a matter of life and death.",
+      "target": "O médico enfatizou que tomar a medicação era uma questão de vida ou morte."
     },
     {
       "id": 8,
-      "source": "The salesman's sob story about his sick child didn't convince the customer.",
-      "target": "A história comovente do vendedor sobre seu filho doente não convenceu o cliente."
+      "source": "The unexpected death of their star player was a tough break for the team.",
+      "target": "A morte inesperada do jogador estrela foi um golpe duro para a equipe."
     },
     {
       "id": 9,
-      "source": "He accepted the acting role to fill in for his sick colleague.",
-      "target": "Ele aceitou o cargo temporário para substituir seu colega doente."
+      "source": "Mourning showed her deep sorrow for her friend's untimely death.",
+      "target": "O luto demonstrava sua profunda tristeza pela morte prematura de seu amigo."
     },
     {
       "id": 10,
-      "source": "She pretended to be sick to avoid going to school yesterday.",
-      "target": "Ela fingiu estar doente para evitar ir à escola ontem."
+      "source": "Apoptosis is a critical pathway that leads to programmed cell death.",
+      "target": "A apoptose é uma via crucial que leva à morte celular programada."
     },
     {
       "id": 11,
-      "source": "He believes in the 'an apple a day' philosophy and rarely gets sick.",
-      "target": "Ele acredita na filosofia 'uma maçã por dia' e raramente fica doente."
+      "source": "The embarrassing video going viral led to his social death at school.",
+      "target": "O vídeo constrangedor que se tornou viral levou à sua morte social na escola."
     },
     {
       "id": 12,
-      "source": "The community rallied around the sick man to offer their support and help.",
-      "target": "A comunidade se uniu em torno do homem doente para oferecer seu apoio e ajuda."
+      "source": "They vowed to love each other till death do us part at their wedding.",
+      "target": "Eles juraram amar um ao outro até que a morte nos separe em seu casamento."
     },
     {
       "id": 13,
-      "source": "The child looked wasted after being sick for weeks with the flu.",
-      "target": "A criança parecia definhada depois de ficar doente por semanas com gripe."
+      "source": "Our commitment is till death do us part, through good times and bad.",
+      "target": "Nosso compromisso é até que a morte nos separe, nos bons e maus momentos."
     },
     {
       "id": 14,
-      "source": "The farmer decided to put away the sick sheep to prevent further suffering.",
-      "target": "O fazendeiro decidiu sacrificar a ovelha doente para evitar mais sofrimento."
+      "source": "Marriage is a sacred bond that should last till death do us part.",
+      "target": "O casamento é um vínculo sagrado que deve durar até que a morte nos separe."
     },
     {
       "id": 15,
-      "source": "She knows how to care for sick animals at the veterinarian clinic.",
-      "target": "Ela sabe como tratar de animais doentes na clínica veterinária."
+      "source": "The couple renewed their vows, promising to stay together till death do us part.",
+      "target": "O casal renovou seus votos, prometendo ficarem juntos até que a morte nos separe."
     },
     {
       "id": 16,
-      "source": "She signed the document on behalf of her colleague who was out sick.",
-      "target": "Ela assinou o documento no lugar de sua colega que estava doente."
+      "source": "Moving to a new city can feel like social death if you don't know anyone.",
+      "target": "Mudar-se para uma nova cidade pode parecer uma morte social se não conhecer ninguém."
     },
     {
       "id": 17,
-      "source": "He tried to avoid the germs, but he still came down sick.",
-      "target": "Ele tentou evitar os germes, mas ainda assim ficou doente."
+      "source": "Many people are unaware of their rights in wrongful death situations.",
+      "target": "Muitas pessoas desconhecem seus direitos em situações de morte por negligência."
     },
     {
       "id": 18,
-      "source": "You shouldn't push it when you're sick; take some time to rest instead.",
-      "target": "Você não deve forçar quando está doente; tire um tempo para descansar."
+      "source": "The fierce animals engaged in a brutal fight to the death.",
+      "target": "Os animais ferozes entraram em uma luta brutal até a morte."
     },
     {
       "id": 19,
-      "source": "The gardener weeded out sick plants to maintain a healthy garden.",
-      "target": "O jardineiro removeu as plantas doentes para manter um jardim saudável."
+      "source": "The ultimate showdown concluded with a dramatic fight to the death.",
+      "target": "O confronto final terminou com uma dramática luta até a morte."
     }
   ]
 }
