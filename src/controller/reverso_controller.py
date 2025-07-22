@@ -51,3 +51,6 @@ class ReversoController:
         manager = AnkiDeckManager(deck_name)
         cards = [{'Front': ex['source'], 'Back': ex['target']} for ex in selecionados]
         return manager.add_cards(cards)
+
+    def limpar_sessao(self):
+        self.exemplo_manager.apagar_sessao()

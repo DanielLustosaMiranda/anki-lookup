@@ -41,6 +41,7 @@ class ReversoApp:
         self.salvar_btn = tk.Button(root, text="Salvar selecionados CSV", command=self.on_salvar_csv)
         self.salvar_btn.grid(row=4, column=3, sticky="e", padx=5)
 
+
         # --- Linha 5: Deck e Anki ---
         tk.Label(root, text="Deck:").grid(row=5, column=0, sticky="w")
         self.deck_var = tk.StringVar(value="Carregando...")
@@ -53,6 +54,10 @@ class ReversoApp:
         # --- Linha 6: Status ---
         self.status_label = tk.Label(root, text="Pronto.", anchor="w")
         self.status_label.grid(row=6, column=0, columnspan=4, sticky="we", pady=(5, 0))
+
+        # --- Linha 7: limpar sessao --
+        self.limpar_btn = tk.Button(root, text="🧹 Limpar sessão", command=self.on_limpar_sessao)
+        self.limpar_btn.grid(row=6, column=0, columnspan=4, pady=5)
 
         # Carrega decks do Anki
         self.listar_decks()
@@ -136,3 +141,10 @@ class ReversoApp:
         else:
             messagebox.showerror("Erro", "Falha ao enviar para o Anki.")
             self.set_status("❌ Erro ao enviar cartões para o Anki.")
+
+    def on_limpar_sessao(self):
+        confirm = messagebox.askyesno("Confirmar", "Tem certeza que deseja apagar todos os arquivos da sessão?")
+        if confirm:
+            self.controller.limpar_sessao()
+            messagebox.showinfo("Sessão limpa", "Todos os arquivos foram apagados.")
+            self.set_status("🧹 Sessão limpa.")

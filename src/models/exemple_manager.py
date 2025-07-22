@@ -43,3 +43,9 @@ class ExemploManager:
         with open(path, 'a', encoding='utf-8', newline='') as f:
             writer = csv.writer(f, quoting=csv.QUOTE_ALL)
             writer.writerows([(ex['source'], ex['target']) for ex in exemplos_filtrados])
+
+    def apagar_sessao(self):
+        for nome_arquivo in os.listdir(self.data_dir):
+            caminho_arquivo = os.path.join(self.data_dir, nome_arquivo)
+            if os.path.isfile(caminho_arquivo):
+                os.remove(caminho_arquivo)
