@@ -15,3 +15,23 @@ class ReversoScraperService:
         command = ['node', self.scraper_script_path, 'context', text, source_lang, target_lang]
         print(f"Executando comando: {' '.join(command)}")
         return run_cmd(command)
+    
+    def get_translation(self, text: str, source_lang: str, target_lang: str) -> Optional[Dict]:
+        command = ['node', self.scraper_script_path, 'translation', text, source_lang, target_lang]
+        print(f"Executando comando: {' '.join(command)}")
+        return run_cmd(command)
+    
+    def get_synonyms(self, text: str, source_lang: str, target_lang: str) -> Optional[Dict]:
+        command = ['node', self.scraper_script_path, 'synonyms', text, source_lang, target_lang]
+        print(f"Executando comando: {' '.join(command)}")
+        return run_cmd(command)
+    
+    def get_spell(self, text: str, source_lang: str, target_lang: str) -> Optional[Dict]:
+        command = ['node', self.scraper_script_path, 'spell', text, source_lang, target_lang]
+        print(f"Executando comando: {' '.join(command)}")
+        return run_cmd(command)
+    
+    def get_conjugation(self, text: str, source_lang: str, target_lang: str) -> Optional[Dict]:
+        command = ['node', self.scraper_script_path, 'conjugation', text, source_lang, target_lang]
+        print(f"Executando comando: {' '.join(command)}")
+        return run_cmd(command)

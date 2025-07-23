@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, messagebox, scrolledtext
+from src.enums.languages import SupportedLanguages
 
 class ReversoApp:
     def __init__(self, root, controller):
@@ -7,59 +8,75 @@ class ReversoApp:
         self.controller = controller
         self.exemplos = []
 
-        self.root.title("Tradutor com Reverso")
+        self.root.title("Anki Lookup")
+        self.root.geometry("750x600")
+        self.root.configure(padx=10, pady=10)
 
-        # --- Linha 0: Idiomas ---
-        tk.Label(root, text="Idioma origem:").grid(row=0, column=0, sticky="w")
-        self.source_lang = ttk.Combobox(root, values=["english", "french", "spanish", "german"], width=15)
+        # ---------- Linha 0: Idiomas ----------
+        idioma_frame = tk.Frame(root)
+        idioma_frame.grid(row=0, column=0, columnspan=2, sticky="we", pady=(0, 5))
+
+        tk.Label(idioma_frame, text="De:").pack(side="left")
+        self.source_lang = ttk.Combobox(idioma_frame, values=SupportedLanguages, width=15)
         self.source_lang.set("english")
-        self.source_lang.grid(row=0, column=1)
+        self.source_lang.pack(side="left", padx=(5, 20))
 
-        tk.Label(root, text="Idioma destino:").grid(row=0, column=2, sticky="w")
-        self.target_lang = ttk.Combobox(root, values=["portuguese", "english", "french", "spanish"], width=15)
+        tk.Label(idioma_frame, text="Para:").pack(side="left")
+        self.target_lang = ttk.Combobox(idioma_frame, values=SupportedLanguages, width=15)
         self.target_lang.set("portuguese")
-        self.target_lang.grid(row=0, column=3)
+        self.target_lang.pack(side="left", padx=5)
 
-        # --- Linha 1: Palavra ---
-        tk.Label(root, text="Palavra:").grid(row=1, column=0, sticky="w")
-        self.palavra_entry = tk.Entry(root, width=40)
-        self.palavra_entry.grid(row=1, column=1, columnspan=3, pady=5, sticky="we")
+        # ---------- Linha 1: Palavra ----------
+        palavra_frame = tk.Frame(root)
+        palavra_frame.grid(row=1, column=0, columnspan=2, sticky="we", pady=(0, 5))
 
-        # --- Linha 2: Buscar ---
-        self.buscar_btn = tk.Button(root, text="Buscar exemplos", command=self.on_buscar)
-        self.buscar_btn.grid(row=2, column=0, columnspan=4, pady=10)
+        tk.Label(palavra_frame, text="Palavra:").pack(side="left")
+        self.palavra_entry = tk.Entry(palavra_frame, width=40)
+        self.palavra_entry.pack(side="left", padx=5, expand=True, fill="x")
 
-        # --- Linha 3: Resultados ---
-        self.resultado_text = scrolledtext.ScrolledText(root, height=15, width=80)
-        self.resultado_text.grid(row=3, column=0, columnspan=4, padx=5)
+        self.buscar_btn = tk.Button(palavra_frame, text="Buscar exemplos", command=self.on_buscar)
+        self.buscar_btn.pack(side="left", padx=10)
 
-        # --- Linha 4: IDs para salvar/enviar ---
-        tk.Label(root, text="IDs para salvar/enviar (ex: 0,2,4):").grid(row=4, column=0, sticky="w", pady=5)
-        self.ids_entry = tk.Entry(root, width=30)
-        self.ids_entry.grid(row=4, column=1, columnspan=2, sticky="w")
+        # ---------- Linha 2: Resultados ----------
+        self.resultado_text = scrolledtext.ScrolledText(root, height=15, width=80, wrap=tk.WORD)
+        self.resultado_text.grid(row=2, column=0, columnspan=2, pady=(5, 10), sticky="nsew")
 
-        self.salvar_btn = tk.Button(root, text="Salvar selecionados CSV", command=self.on_salvar_csv)
-        self.salvar_btn.grid(row=4, column=3, sticky="e", padx=5)
+        # ---------- Linha 3: IDs + Salvar ----------
+        id_frame = tk.Frame(root)
+        id_frame.grid(row=3, column=0, columnspan=2, sticky="we", pady=5)
 
+        tk.Label(id_frame, text="IDs (ex: 0,2,4):").pack(side="left")
+        self.ids_entry = tk.Entry(id_frame, width=25)
+        self.ids_entry.pack(side="left", padx=5)
 
-        # --- Linha 5: Deck e Anki ---
-        tk.Label(root, text="Deck:").grid(row=5, column=0, sticky="w")
+        self.salvar_btn = tk.Button(id_frame, text="💾 Salvar CSV", command=self.on_salvar_csv)
+        self.salvar_btn.pack(side="left", padx=10)
+
+        # ---------- Linha 4: Anki ----------
+        anki_frame = tk.Frame(root)
+        anki_frame.grid(row=4, column=0, columnspan=2, sticky="we", pady=(5, 10))
+
+        
+        tk.Label(anki_frame, text="Deck:").pack(side="left")
         self.deck_var = tk.StringVar(value="Carregando...")
-        self.deck_menu = ttk.Combobox(root, textvariable=self.deck_var, state="readonly")
-        self.deck_menu.grid(row=5, column=1, columnspan=2, sticky="we", padx=5)
+        self.deck_menu = ttk.Combobox(anki_frame, textvariable=self.deck_var, state="readonly", width=30)
+        self.deck_menu.pack(side="left", padx=5)
 
-        self.anki_btn = tk.Button(root, text="Enviar selecionados para Anki", command=self.on_enviar_anki)
-        self.anki_btn.grid(row=5, column=3, sticky="e", padx=5)
+        self.anki_btn = tk.Button(anki_frame, text="📥 Enviar para Anki", command=self.on_enviar_anki)
+        self.anki_btn.pack(side="left", padx=10)
 
-        # --- Linha 6: Status ---
-        self.status_label = tk.Label(root, text="Pronto.", anchor="w")
-        self.status_label.grid(row=6, column=0, columnspan=4, sticky="we", pady=(5, 0))
-
-        # --- Linha 7: limpar sessao --
+        # ---------- Linha 5: Limpar sessão ----------
         self.limpar_btn = tk.Button(root, text="🧹 Limpar sessão", command=self.on_limpar_sessao)
-        self.limpar_btn.grid(row=6, column=0, columnspan=4, pady=5)
+        self.limpar_btn.grid(row=5, column=0, columnspan=2, pady=(0, 5))
 
-        # Carrega decks do Anki
+        # ---------- Linha 6: Status ----------
+        self.status_label = tk.Label(root, text="Pronto.", anchor="w")
+        self.status_label.grid(row=6, column=0, columnspan=2, sticky="we")
+
+        # Expansão para texto
+        root.grid_rowconfigure(2, weight=1)
+        root.grid_columnconfigure(1, weight=1)
+
         self.listar_decks()
 
     def set_status(self, msg):
@@ -98,8 +115,8 @@ class ReversoApp:
 
         self.exemplos = exemplos
         for ex in exemplos:
-            self.resultado_text.insert(tk.END, f"[{ex['id']}] EN: {ex['source']}\n")
-            self.resultado_text.insert(tk.END, f"          PT: {ex['target']}\n")
+            self.resultado_text.insert(tk.END, f"[{ex['id']}] Source: {ex['source']}\n")
+            self.resultado_text.insert(tk.END, f"          Target: {ex['target']}\n")
             self.resultado_text.insert(tk.END, "-" * 40 + "\n")
 
         self.set_status("✅ Pronto.")
