@@ -1,7 +1,7 @@
 # src/controllers/reverso_controller.py
-from src.services.reverso_service import ReversoScraperService
-from src.models.exemple_manager import ExemploManager
-from src.services.anki_deck_manager import AnkiDeckManager
+from reverso_anki.services.reverso_service import ReversoScraperService
+from reverso_anki.models.exemple_manager import ExemploManager
+from reverso_anki.services.anki_deck_manager import AnkiDeckManager
 import os
 
 class ReversoController:
