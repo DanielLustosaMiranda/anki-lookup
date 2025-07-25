@@ -56,7 +56,6 @@ class ReversoApp:
         anki_frame = tk.Frame(root)
         anki_frame.grid(row=4, column=0, columnspan=2, sticky="we", pady=(5, 10))
 
-        
         tk.Label(anki_frame, text="Deck:").pack(side="left")
         self.deck_var = tk.StringVar(value="Carregando...")
         self.deck_menu = ttk.Combobox(anki_frame, textvariable=self.deck_var, state="readonly", width=30)
@@ -66,7 +65,7 @@ class ReversoApp:
         self.anki_btn.pack(side="left", padx=10)
 
         # ---------- Linha 5: Limpar sessão ----------
-        self.limpar_btn = tk.Button(root, text="🧹 Limpar sessão", command=self.on_limpar_sessao)
+        self.limpar_btn = tk.Button(root, text="🪑 Limpar sessão", command=self.on_limpar_sessao)
         self.limpar_btn.grid(row=5, column=0, columnspan=2, pady=(0, 5))
 
         # ---------- Linha 6: Status ----------
@@ -164,4 +163,4 @@ class ReversoApp:
         if confirm:
             self.controller.limpar_sessao()
             messagebox.showinfo("Sessão limpa", "Todos os arquivos foram apagados.")
-            self.set_status("🧹 Sessão limpa.")
+            self.set_status("🪑 Sessão limpa.")
