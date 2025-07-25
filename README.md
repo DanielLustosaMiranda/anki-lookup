@@ -1,9 +1,10 @@
 Anki-lookup Anki Add-on (Auxiliador de Estudos de Idiomas)
 
 Este é um auxiliar de estudos de idiomas que utiliza uma API não oficial do Reverso Context para criar flashcards automaticamente e enviá-los para o Anki.
-```
-    ⚠️ Funciona como add-on externo ao Anki — você roda ele separadamente, como uma aplicação.
-```
+
+⚠️ Funciona como add-on externo ao Anki — você roda ele separadamente, como uma aplicação.
+obs: a parte de add-on ainda está sendo desenvolvida
+
 # Pré-requisitos
 
 Antes de usar, você precisa ter instalado:

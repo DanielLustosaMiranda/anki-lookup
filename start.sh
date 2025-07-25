@@ -34,3 +34,4 @@ cd .. || error_exit "Erro ao voltar para o diretório anterior."
 log "Dependências do Node.js instaladas com sucesso."
 
 log "✅ Tudo concluído com sucesso!"
+log "Entre no ambiente virtual e rode app.py"
