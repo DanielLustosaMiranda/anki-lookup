@@ -1,6 +1,35 @@
+Anki-lookup Anki Add-on (Auxiliador de Estudos de Idiomas)
 
-Para usar o java scprit Entre no na pasta node_scraper
-```bash
-    npm install 
-    npx playwright install
+Este é um auxiliar de estudos de idiomas que utiliza uma API não oficial do Reverso Context para criar flashcards automaticamente e enviá-los para o Anki.
 ```
+    ⚠️ Funciona como add-on externo ao Anki — você roda ele separadamente, como uma aplicação.
+```
+# Pré-requisitos
+
+Antes de usar, você precisa ter instalado:
+
+- Node.js + npm
+- Python 3
+
+# Instalação
+
+Para instalar todas as dependências (Python e Node.js), execute:
+```bash
+    ./install.sh
+```
+Esse script irá:
+
+    - Criar um ambiente virtual Python (venv)
+
+    - Instalar os pacotes do requirements.txt
+
+    - Instalar as dependências do npm e do playwright dentro da pasta reverso_scraper
+
+# Como usar
+
+Após instalar as dependências, ative o ambiente virtual e inicie o app:
+```bash
+    source venv/bin/activate
+    python3 app.py
+```
+Certifique-se de estar na raiz do projeto para executar os comandos acima.
